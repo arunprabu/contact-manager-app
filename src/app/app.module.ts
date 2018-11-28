@@ -13,6 +13,6 @@ import { AppComponent } from './app.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent]   // Step3: ng module should be kickstarted with a component -- root component
 })
 export class AppModule { }
