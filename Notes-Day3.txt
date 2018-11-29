@@ -1,0 +1,15 @@
+launch nodejs cmd prompt 
+npm install @angular/cli -g
+ng new my-app 
+cd my-app
+ng s -o
+ng g c shared/header 
+ng g c shared/footer -it -is 
+ng g c shared/nav -is 
+ng g c shared/header/search -is 
+
+Template page is header
+https://jsbin.com/gitufizacu/edit?html,js
+
+Install augury chrome extension 
+https://chrome.google.com/webstore/detail/augury/elgalmkoelokbchhkhacckoklkejnhcd
