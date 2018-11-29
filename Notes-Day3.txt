@@ -13,3 +13,25 @@ https://jsbin.com/gitufizacu/edit?html,js
 
 Install augury chrome extension 
 https://chrome.google.com/webstore/detail/augury/elgalmkoelokbchhkhacckoklkejnhcd
+
+
+A Note on Project Structure  ( Initial stage)
+========
+src/
+  app/
+    shared/
+      header/
+      footer/
+      nav/
+    contacts/
+      add-contact/
+      list-contacts/
+      contact-details/
+    auth/
+      login/
+      signup/
+      r-password/
+    dashboard/
+    reports/
+
+
