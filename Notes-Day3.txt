@@ -8,7 +8,7 @@ ng g c shared/footer -it -is
 ng g c shared/nav -is 
 ng g c shared/header/search -is 
 
-Template page is header
+Template page is here
 https://jsbin.com/gitufizacu/edit?html,js
 
 Install augury chrome extension 
