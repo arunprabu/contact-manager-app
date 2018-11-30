@@ -41,8 +41,33 @@ Data binding
 1. String Interpolation  - {{ }}
 2. Property Binding - []
 3. Event Binding - ( )
-4. Two way Binding - 
-5. Custom Property Binding
-6. Custom Event Binding
+4. Two way Binding - [(ngModel)]    
+5. Custom Property Binding   - []
+6. Custom Event Binding  - ()
 
 Expression - { } 
+
+ TS => HTML  ( SI, PB, EB )
+ TS <=> HTML (TWB) 
+
+Cross Component Interaction
+---------
+ Custom Prop Binding
+  Parent => Child ( DataBindingComp => CPBComp )
+ 
+ Custom Event Binding ( prereq: custom event in js, jquery )
+  Child => Parent ( Nav => Header )
+
+ Parent to Child 
+  ViewChild
+ 
+Directives
+============
+  Some instruction to manupulate the Document Object Model (DOM ) of the Component just like it happens thru jquery plugin
+  jQuery plugin to be usable in ng app => directives 
+
+  1) Attribute Directives 
+      <div [ngClass]="">
+      <div [ngStyle]="">
+  2) Structural Directives
+      

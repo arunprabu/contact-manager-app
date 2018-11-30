@@ -1,0 +1,48 @@
+<h2>Directives</h2>
+<br>
+<nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Attribute Directives</a>
+    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Structural Directives</a>
+    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Custom Attribute Directives</a>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+    <h3>Attribute Directives </h3>
+    <h5>ngStyle</h5>
+    <!-- Syntax: [ngStyle]="{expression}" -->
+    <div [ngStyle]="{ 'color': myColor }">
+      Text appears in the color
+    </div>
+    <input type="text" [(ngModel)]="myColor">
+
+  </div>
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+    <h3>Structural Directives</h3>
+    <h5>*ngIf</h5>
+    <div class="alert alert-success" *ngIf="isLoggedIn">
+      Thanks for logging in..
+    </div>
+    <div class="alert alert-danger" *ngIf="!isLoggedIn">
+      Please login to access the premium content...
+    </div>
+    <hr>
+
+    <h5>*ngFor</h5> 
+    <ul>
+      <li *ngFor="let skill of skillsList">
+        {{ skill }}
+        <!-- TODO: index -->
+      </li>
+    </ul>
+
+    <h5>ngSwitch</h5>
+    <!-- TODO: -->
+
+
+  </div>
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+    custom attribute directives
+  </div>
+</div>

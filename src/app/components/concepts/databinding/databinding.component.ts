@@ -25,7 +25,7 @@ export class DatabindingComponent implements OnInit, AfterViewInit {
   }
 
   getMyAge(){
-    return 50;
+    return '50';
   }
 
   //to listen to custom event emitted by ceb comp 

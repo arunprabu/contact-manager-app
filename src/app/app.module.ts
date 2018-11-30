@@ -4,17 +4,18 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './shared/header/header.component';
-import { FooterComponent } from './shared/footer/footer.component';
-import { NavComponent } from './shared/nav/nav.component';
-import { SearchComponent } from './shared/header/search.component';
-import { DatabindingComponent } from './concepts/databinding/databinding.component';
-import { SiComponent } from './concepts/databinding/si/si.component';
-import { PbComponent } from './concepts/databinding/pb/pb.component';
-import { EbComponent } from './concepts/databinding/eb/eb.component';
-import { TwbComponent } from './concepts/databinding/twb/twb.component';
-import { CpbComponent } from './concepts/databinding/cpb/cpb.component';
-import { CebComponent } from './concepts/databinding/ceb/ceb.component';
+import { HeaderComponent } from './components/shared/header/header.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
+import { NavComponent } from './components/shared/nav/nav.component';
+import { SearchComponent } from './components/shared/header/search.component';
+import { DatabindingComponent } from './components/concepts/databinding/databinding.component';
+import { SiComponent } from './components/concepts/databinding/si/si.component';
+import { PbComponent } from './components/concepts/databinding/pb/pb.component';
+import { EbComponent } from './components/concepts/databinding/eb/eb.component';
+import { TwbComponent } from './components/concepts/databinding/twb/twb.component';
+import { CpbComponent } from './components/concepts/databinding/cpb/cpb.component';
+import { CebComponent } from './components/concepts/databinding/ceb/ceb.component';
+import { DirectivesComponent } from './components/concepts/directives/directives.component';
 
 //main switch box
 //Decorator 
@@ -31,7 +32,8 @@ import { CebComponent } from './concepts/databinding/ceb/ceb.component';
     EbComponent,
     TwbComponent,
     CpbComponent,
-    CebComponent
+    CebComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,
