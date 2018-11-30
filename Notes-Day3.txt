@@ -19,22 +19,28 @@ A Note on Project Structure  ( Initial stage)
 ========
 src/
   app/
-    shared/
-      header/
-      footer/
-      nav/
-    contacts/
-      add-contact/
-      list-contacts/
-      contact-details/
-    auth/
-      login/
-      signup/
-      r-password/
-    dashboard/
-    reports/
-
-
+    components/
+      shared/
+        header/
+        footer/
+        nav/
+      contacts/
+        add-contact/
+        list-contacts/
+        contact-details/
+      auth/
+        login/
+        signup/
+        r-password/
+      dashboard/
+      reports/
+      concepts/
+        databinding/
+        directives/
+    directives/
+    services/
+    pipes/
+    guards/
 
 Data binding 
 ============
@@ -70,4 +76,6 @@ Directives
       <div [ngClass]="">
       <div [ngStyle]="">
   2) Structural Directives
-      
+      *ngIf
+      *ngFor
+      ngSwitch
