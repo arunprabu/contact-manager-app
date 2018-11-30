@@ -1,0 +1,11 @@
+<div>
+  <input type="text" value="{{ myName }}"> <!-- string interpolation --> <br>
+  <input type="text" [value]="myName"> <!-- Prop binding-->
+
+  <div [ngClass]="{ green: isLoggedIn(), red: !isLoggedIn() }">
+    test
+  </div>
+
+  <!-- try [ngStyle] -->
+
+</div>

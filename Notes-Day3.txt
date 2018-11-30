@@ -6,7 +6,7 @@ ng s -o
 ng g c shared/header 
 ng g c shared/footer -it -is 
 ng g c shared/nav -is 
-ng g c shared/header/search -is 
+ng g c shared/header/search -is -it --flat --spec=false 
 
 Template page is here
 https://jsbin.com/gitufizacu/edit?html,js
@@ -35,3 +35,14 @@ src/
     reports/
 
 
+
+Data binding 
+============
+1. String Interpolation  - {{ }}
+2. Property Binding - []
+3. Event Binding - ( )
+4. Two way Binding - 
+5. Custom Property Binding
+6. Custom Event Binding
+
+Expression - { } 

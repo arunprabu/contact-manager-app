@@ -1,0 +1,13 @@
+<div>
+  <!-- one way binding -->
+  <p>{{ personName }}</p>
+
+  <input type="text" value="{{personName}}">
+
+  <input type="text" [value]="personName">
+
+
+  <!-- Twb -->
+  <input type="text" [(ngModel)]="personName">
+
+</div>
