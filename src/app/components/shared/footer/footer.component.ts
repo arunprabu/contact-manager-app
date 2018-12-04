@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
       background: red;
     }
     footer{
-      background: yellow;
+      background: #eeeeee;
     }
     `
   ]

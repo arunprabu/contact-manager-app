@@ -26,8 +26,10 @@ src/
         nav/
       contacts/
         add-contact/
-        list-contacts/
         contact-details/
+        ...
+        ...
+        
       auth/
         login/
         signup/
@@ -44,12 +46,12 @@ src/
 
 Data binding 
 ============
-1. String Interpolation  - {{ }}
-2. Property Binding - []
-3. Event Binding - ( )
+1. String Interpolation  - {{ }} 
+2. Property Binding - []  
+3. Event Binding - ( ) 
 4. Two way Binding - [(ngModel)]    
-5. Custom Property Binding   - []
-6. Custom Event Binding  - ()
+5. Custom Property Binding   - []   
+6. Custom Event Binding  - () 
 
 Expression - { } 
 
@@ -65,11 +67,14 @@ Cross Component Interaction
   Child => Parent ( Nav => Header )
 
  Parent to Child 
-  ViewChild
+  ViewChild, ViewChildren
+
+Services  (later)
+ Common service 
  
-Directives
+Directives 
 ============
-  Some instruction to manupulate the Document Object Model (DOM ) of the Component just like it happens thru jquery plugin
+  Some instruction to manupulate the Document Object Model (DOM ) of the Component just like it happens thru jquery plugin 
   jQuery plugin to be usable in ng app => directives 
 
   1) Attribute Directives 
@@ -77,5 +82,45 @@ Directives
       <div [ngStyle]="">
   2) Structural Directives
       *ngIf
-      *ngFor
+      *ngFor  (to understand let keyword: https://leanpub.com/understandinges6/read )
       ngSwitch
+  3) Custom Attribute Directives 
+      ng g d directives/colorizr 
+      TODO: refer directives/colorizr.directive.ts
+
+Routing
+===========
+Step 1: Add the links and set up paths in nav.component.html
+<ul class="nav navbar-nav">
+    <li class="active"><a href="/">Home</a></li>
+    <li><a href="/directives">Directives</a></li>
+    <li><a href="/contacts">Contacts</a></li>
+</ul>
+
+Step 2: Let's have the routes configured in app-routing.module.ts
+const APP_ROUTES: Routes = [
+  //syntax : path should have string and the component when that path is hit
+  { path: '', component: DataBindingComp },
+  { path: 'directives', component: DirectiveComponent },
+]
+
+Step 3: 
+Add <router-outlet></router-outlet> in layout file (app.component.html)
+
+Step 4: Check the app. The routes should work. But the page will reload. Let's fix it.
+Instead of using <a href> use <a routerLink> in nav.component.html. Now check the app. clicking on links should not reload the page.
+ 
+Step 5: let's have active class. have routerLinkActive in li.
+<li class="nav-item" routerLinkActive="active"> 
+in all the li's.
+
+Step 6: Now, when you see the navigation menu, active class will be added in another link also. 
+Let's fix it.
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">Home</a></li>
+
+Step 7: TODO: Change the title for each link.
+Step 8: TODO: Child / nested routing 
+  Refer: https://github.com/arunprabu/ng4-july18/blob/master/Router%20Instructions%20-%20More%20-%20Child%20Routes.txt
+  https://github.com/arunprabu/ng4-july18
+
+

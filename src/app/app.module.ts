@@ -16,6 +16,10 @@ import { TwbComponent } from './components/concepts/databinding/twb/twb.componen
 import { CpbComponent } from './components/concepts/databinding/cpb/cpb.component';
 import { CebComponent } from './components/concepts/databinding/ceb/ceb.component';
 import { DirectivesComponent } from './components/concepts/directives/directives.component';
+import { ColorizrDirective } from './directives/colorizr.directive';
+import { ContactsComponent } from './components/contacts/contacts.component';
+import { AddContactComponent } from './components/contacts/add-contact/add-contact.component';
+import { ContactDetailComponent } from './components/contacts/contact-detail/contact-detail.component';
 
 //main switch box
 //Decorator 
@@ -33,7 +37,11 @@ import { DirectivesComponent } from './components/concepts/directives/directives
     TwbComponent,
     CpbComponent,
     CebComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    ColorizrDirective,
+    ContactsComponent,
+    AddContactComponent,
+    ContactDetailComponent
   ],
   imports: [
     BrowserModule,
