@@ -7,15 +7,18 @@ ng g c shared/header
 ng g c shared/footer -it -is 
 ng g c shared/nav -is 
 ng g c shared/header/search -is -it --flat --spec=false 
+ng g c contacts -is 
+ng g c contacts/add-contact -is 
+ng g c contacts/contact-detail -is
 
-Template page is here
-https://jsbin.com/gitufizacu/edit?html,js
+Header, footer, nav Template page is here 
+https://jsbin.com/gitufizacu/edit?html,js 
 
 Install augury chrome extension 
 https://chrome.google.com/webstore/detail/augury/elgalmkoelokbchhkhacckoklkejnhcd
 
 
-A Note on Project Structure  ( Initial stage)
+A Note on Project Structure  ( Initial stage )
 ========
 src/
   app/
@@ -29,7 +32,7 @@ src/
         contact-details/
         ...
         ...
-        
+
       auth/
         login/
         signup/
@@ -43,13 +46,15 @@ src/
     services/
     pipes/
     guards/
+    utils/
+    models/
 
 Data binding 
 ============
 1. String Interpolation  - {{ }} 
 2. Property Binding - []  
 3. Event Binding - ( ) 
-4. Two way Binding - [(ngModel)]    
+4. Two way Binding - [(ngModel)]     
 5. Custom Property Binding   - []   
 6. Custom Event Binding  - () 
 
@@ -88,7 +93,7 @@ Directives
       ng g d directives/colorizr 
       TODO: refer directives/colorizr.directive.ts
 
-Routing
+Routing  ( Single Page Application ) 
 ===========
 Step 1: Add the links and set up paths in nav.component.html
 <ul class="nav navbar-nav">
@@ -123,4 +128,29 @@ Step 8: TODO: Child / nested routing
   Refer: https://github.com/arunprabu/ng4-july18/blob/master/Router%20Instructions%20-%20More%20-%20Child%20Routes.txt
   https://github.com/arunprabu/ng4-july18
 
+Forms
+=======
+1) Template Driven forms 
+    HTML template form 
+    Adv: 
+      1) easy 
+      2) you will know whats happening 
+    Disadvantages: 
+      1) you wont have more control validation 
+      2) not well suited if you deal with complex forms 
 
+2) Data driven 
+  Reactive forms 
+    created by TS 
+    using angular dom api's 
+      Adv: 
+        1) you will have more control over a form element incl,. validation 
+      Disadvantages: 
+        1) larger learning curve 
+
+
+Forms in Angular Application
+=============
+  1) optimize the template form for ng 
+  2) some kind of validations 
+  Refer: https://codecraft.tv/courses/angular/forms/template-driven/
