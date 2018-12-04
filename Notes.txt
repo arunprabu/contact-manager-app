@@ -3,16 +3,23 @@ npm install @angular/cli -g
 ng new my-app 
 cd my-app
 ng s -o
-ng g c shared/header 
+ng g c shared/header  
 ng g c shared/footer -it -is 
 ng g c shared/nav -is 
 ng g c shared/header/search -is -it --flat --spec=false 
+    update your app.comp.html -- layout 
+
+Header, footer, nav Template page is here 
+Refer: https://jsbin.com/gitufizacu/edit?html,js 
+
 ng g c contacts -is 
 ng g c contacts/add-contact -is 
 ng g c contacts/contact-detail -is
+Templates for the above components
+Refer: https://jsbin.com/nericacepo/3/edit?html
 
-Header, footer, nav Template page is here 
-https://jsbin.com/gitufizacu/edit?html,js 
+
+
 
 Install augury chrome extension 
 https://chrome.google.com/webstore/detail/augury/elgalmkoelokbchhkhacckoklkejnhcd
@@ -93,6 +100,8 @@ Directives
       ng g d directives/colorizr 
       TODO: refer directives/colorizr.directive.ts
 
+
+
 Routing  ( Single Page Application ) 
 ===========
 Step 1: Add the links and set up paths in nav.component.html
@@ -152,5 +161,14 @@ Forms
 Forms in Angular Application
 =============
   1) optimize the template form for ng 
-  2) some kind of validations 
+  2) some kind of validations -- TODO: Arun
   Refer: https://codecraft.tv/courses/angular/forms/template-driven/
+
+
+
+Services
+RXJS & Observables
+Pipes 
+guards
+Interfaces
+Modules - ( datatables and file upload )
